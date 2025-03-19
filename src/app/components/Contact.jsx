@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, LocateFixed } from "lucide-react";
+import { Phone, Mail, MapIcon } from "lucide-react";
 
 function Contact() {
     return (
@@ -23,7 +23,7 @@ function Contact() {
                 </div>
                 <div className="flex items-center space-x-2">
                     <strong className='max-sm:hidden'>Adresse : </strong>
-                    <strong className='min-sm:hidden'><LocateFixed className="w-6 h-6 text-purple-300" /></strong>
+                    <strong className='min-sm:hidden'><MapIcon className="w-6 h-6 text-purple-300" /></strong>
                     <span>Abidjan, Côte D'Ivoire</span>
                 </div>
                 <div className="flex flex-col space-y-2">
