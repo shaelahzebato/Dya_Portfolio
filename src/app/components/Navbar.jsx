@@ -8,7 +8,7 @@ function Navbar() {
     };
 
     return (
-        <nav className='w-full h-14 flex items-center justify-between text-gray-800'>
+        <nav className='w-full h-14 flex items-center justify-between px-3 bg-gray-50 text-gray-800'>
             <Link href="/" className="text-sm">
                 Curriculum Vitae
             </Link>
