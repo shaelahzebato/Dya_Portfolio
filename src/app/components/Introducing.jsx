@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Introducing() {
     return (
-        <section className="mt-24 max-sm:mt-0 text-gray-800">
+        <section className="mt-24 max-sm:-mt-72 text-gray-800">
             <div className="flex flex-col gap-4 max-sm:justify-center max-sm:items-center">
                 <p className="text-lg text-gray-500">Hi, je suis</p>
                 <h1 className="text-6xl font-bold text-purple-950 tracking-wider font-poppins">
