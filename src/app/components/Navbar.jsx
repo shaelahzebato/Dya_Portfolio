@@ -6,11 +6,27 @@ import { motion } from "framer-motion";
 
 function Navbar() {
 
-    const scrollToSection = (id) => {
-        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
     };
 
-    const [isOpen, setIsOpen] = useState(false)
+    // Fonction pour fermer le menu après un clic sur un lien
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+            closeMenu(); // Ferme le menu après le clic
+        } else {
+            console.warn(`L'élément avec l'ID "${id}" n'existe pas.`);
+        }
+    };
+    
 
     return (
         <div className="">
@@ -67,4 +83,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;
