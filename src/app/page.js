@@ -36,9 +36,9 @@ export default function Home() {
                         <Navbar/>
                     </div>
                     <div className="h-screen flex items-center justify-center bg-purple-300">
-                        <div className="relative flex flex-col items-center space-y-6">
+                        <div className="relative flex flex-col items-center">
                             <a href="/Shaélah_ZEBATO_CV2025.pdf" download className="absolute md:-right-20 -top-20 bg-purple-950 text-purple-400 text-lg py-3 px-6 rounded-lg shadow-lg transition-all hover:bg-purple-800 hover:text-white hover:scale-105">
-                                Télécharger
+                                Télécharger Cv
                             </a>
                             <div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] overflow-hidden shadow-xl transition-transform hover:scale-105">
                                 <Image
@@ -88,7 +88,7 @@ export default function Home() {
                 <div className="sticky top-0 h-screen flex items-center justify-center bg-purple-300">
                     <div className="relative flex flex-col items-center space-y-6">
                         <a href="/Shaélah_ZEBATO_CV2025.pdf" download className="absolute md:-right-20 -top-20 bg-purple-950 text-purple-400 text-lg py-3 px-6 rounded-lg shadow-lg transition-all hover:bg-purple-800 hover:text-white hover:scale-105">
-                            Télécharger
+                            Télécharger Cv
                         </a>
                         <div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] overflow-hidden shadow-xl transition-transform hover:scale-105">
                             <Image
