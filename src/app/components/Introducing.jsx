@@ -28,7 +28,7 @@ function Introducing() {
                     <strong>Adresse</strong>
                     <span><span className='max-sm:hidden'>Abidjan</span><span className='min-sm:hidden'>Abj</span>, Côte D'Ivoire</span>
                 </div>
-                <div className="flex items-center space-x-2 text-base max-sm:text-sm max-sm:justify-center">
+                <div className="flex items-center space-x-2 text-base max-sm:mt-8 max-sm:text-sm max-sm:justify-center">
                     <Link href="https://www.linkedin.com" className="underline">LinkedIn</Link>
                     <span>•</span>
                     <Link href="https://github.com/" className="underline">Github</Link>
