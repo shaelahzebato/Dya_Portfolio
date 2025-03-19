@@ -43,7 +43,7 @@ function Navbar() {
             </nav>
 
             <nav className="min-sm:hidden w-full h-14 flex items-center justify-between bg-gray-50 text-gray-800">
-                <Link href="/" className="text-sm">
+                <Link href="/" className="text-sm font-poppins">
                     Curriculum Vitae
                 </Link>
                 <ul className="flex items-center gap-6 text-xs">
