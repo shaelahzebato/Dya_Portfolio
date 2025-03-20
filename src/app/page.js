@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import Image from "next/image";
 import Navbar from "./components/Navbar";
@@ -8,7 +9,6 @@ import AboutMe from "./components/AboutMe";
 import Cv from "./components/Cv";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 
 
@@ -17,7 +17,7 @@ export default function Home() {
 
     useEffect(() => {
         const handleScroll = () => {
-        setNavShadow(window.scrollY > 50);
+            setNavShadow(window.scrollY > 50);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -25,12 +25,9 @@ export default function Home() {
 
     
     return (
-        // Partie Droite (sur mobile : en haut | sur grand écran : à droite)
-        // Partie Gauche (sur mobile : en bas | sur grand écran : à gauche)
-        
-        <div className="">
+        <>
             {/* Petit écran */}
-            <main className="min-sm:hidden w-full min-h-screen grid grid-cols-1 md:grid-cols-2 md:grid-flow-row grid-flow-dense bg-gray-50">
+            <main className="min-sm:hidden w-full min-h-screen grid grid-cols-1 md:grid-cols-2 bg-gray-50">
                 <div className="flex flex-col">
                     <div className="px-6">
                         <Navbar/>
@@ -55,7 +52,7 @@ export default function Home() {
                 
                 <div className="w-[90%] container mx-auto flex flex-col gap-6 py-3 px-6">
                     <Introducing/>
-                    <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                    <motion.section id="about" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
                         <AboutMe/>
                     </motion.section>
                     <Cv/>
@@ -76,7 +73,7 @@ export default function Home() {
                     <Navbar/>
                     <div className="w-[80%] container mx-auto">
                         <Introducing/>
-                        <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                        <motion.section id="about" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
                             <AboutMe/>
                         </motion.section>
                         <Cv/>
@@ -108,7 +105,7 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-        </div>
+        </>
     );
 }
 

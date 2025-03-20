@@ -21,7 +21,7 @@ function Navbar() {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
-            closeMenu(); // Ferme le menu après le clic
+            closeMenu();
         } else {
             console.warn(`L'élément avec l'ID "${id}" n'existe pas.`);
         }
@@ -29,7 +29,8 @@ function Navbar() {
     
 
     return (
-        <div className="">
+        <>
+            {/* Grand écran */}
             <nav className='max-sm:hidden w-full h-14 flex items-center justify-between px-3 bg-gray-50 text-gray-800'>
                 <Link href="/" className="text-sm">
                     Curriculum Vitae
@@ -58,6 +59,7 @@ function Navbar() {
                 </ul>
             </nav>
 
+            {/* Pétit écran */}
             <nav className="min-sm:hidden w-full h-14 flex items-center justify-between bg-gray-50 text-gray-800">
                 <Link href="/" className="text-sm font-poppins">
                     Curriculum Vitae
@@ -79,7 +81,7 @@ function Navbar() {
                     </motion.div>
                 )}
             </nav>
-        </div>
+        </>
     )
 }
 
