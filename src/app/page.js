@@ -73,16 +73,16 @@ export default function Home() {
                     <Navbar/>
                     <div className="w-[80%] container mx-auto">
                         <Introducing/>
-                        <motion.section id="about" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                        {/* <motion.section id="about" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}> */}
                             <AboutMe/>
-                        </motion.section>
+                        {/* </motion.section> */}
                         <Cv/>
-                        <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                        {/* <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}> */}
                             <Projects/>
-                        </motion.section>
-                        <motion.section id="contact" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                        {/* </motion.section> */}
+                        {/* <motion.section id="contact" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}> */}
                             <Contact/>
-                        </motion.section>
+                        {/* </motion.section> */}
                     </div>
                     <Footer/>
                 </div>

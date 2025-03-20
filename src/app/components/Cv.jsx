@@ -10,8 +10,8 @@ function Cv() {
     return (
         <section className="mt-44 py-12 text-gray-800">
             <div className="grid grid-cols-1 gap-20">
-                {/* Section Compétences max-w-4xl mx-auto  */}
-                <motion.div variants={sectionVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                {/* Section Compétences */}
+                <motion.div id="cv" variants={sectionVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                     <div className="flex items-center space-x-4 max-sm:flex-col max-sm:justify-center">
                         <span className="text-lg font-semibold tracking-[0.3em] uppercase">Compétences</span>
                         <div className="w-full max-w-xs h-[2px] bg-gray-800"></div>
