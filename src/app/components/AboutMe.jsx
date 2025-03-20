@@ -3,7 +3,7 @@ import React from 'react'
 function AboutMe() {
     return (
         <section className="w-full flex flex-col gap-10 text-gray-800">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 max-sm:flex-col max-sm:justify-center">
                 <span className="text-lg font-semibold tracking-[0.4em] uppercase">
                     À PROPOS
                 </span>
