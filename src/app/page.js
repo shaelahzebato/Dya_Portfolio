@@ -54,14 +54,17 @@ export default function Home() {
                 </div>
                 
                 <div className="w-[90%] container mx-auto flex flex-col gap-6 py-3 px-6">
-                        <Introducing/>
-                        <Cv/>
-                        <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-                            <Projects/>
-                        </motion.section>
-                        <motion.section id="contact" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-                            <Contact/>
-                        </motion.section>
+                    <Introducing/>
+                    <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                        <AboutMe/>
+                    </motion.section>
+                    <Cv/>
+                    <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                        <Projects/>
+                    </motion.section>
+                    <motion.section id="contact" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                        <Contact/>
+                    </motion.section>
                     <Footer/>
                 </div>
             </main>
@@ -73,6 +76,9 @@ export default function Home() {
                     <Navbar/>
                     <div className="w-[80%] container mx-auto">
                         <Introducing/>
+                        <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+                            <AboutMe/>
+                        </motion.section>
                         <Cv/>
                         <motion.section id="projects" className="h-screen flex items-center justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
                             <Projects/>
