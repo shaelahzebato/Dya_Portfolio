@@ -31,7 +31,8 @@ function Navbar() {
     return (
         <>
             {/* Grand écran */}
-            <nav className='max-sm:hidden w-full h-14 flex items-center justify-between px-3 bg-gray-50 text-gray-800'>
+            <nav className="hidden sm:flex w-full h-14 items-center justify-between px-3 bg-gray-50 text-gray-800">
+            {/* </nav><nav className='max-sm:hidden w-full h-14 flex items-center justify-between px-3 bg-gray-50 text-gray-800'> */}
                 <Link href="/" className="text-sm">
                     Curriculum Vitae
                 </Link>
@@ -60,7 +61,8 @@ function Navbar() {
             </nav>
 
             {/* Pétit écran */}
-            <nav className="min-sm:hidden w-full h-14 flex items-center justify-between bg-gray-50 text-gray-800">
+            <nav className="sm:hidden w-full h-14 flex items-center justify-between px-3 bg-gray-50 text-gray-800">
+            {/* <nav className="min-sm:hidden w-full h-14 flex items-center justify-between bg-gray-50 text-gray-800"> */}
                 <Link href="/" className="text-sm font-poppins">
                     Curriculum Vitae
                 </Link>
@@ -86,3 +88,9 @@ function Navbar() {
 }
 
 export default Navbar;
+
+/**
+ * 
+<nav className="hidden sm:flex w-full h-14 items-center justify-between px-3 bg-gray-50 text-gray-800"></nav>
+<nav className="sm:hidden w-full h-14 flex items-center justify-between px-3 bg-gray-50 text-gray-800"></nav>
+ */
